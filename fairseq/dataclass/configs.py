@@ -469,7 +469,7 @@ class DatasetConfig(FairseqDataclass):
         default=False,
         metadata={"help": "ignore too long or too short lines in valid and test set"},
     )
-    max_tokens: Optional[int] = field(
+    max_tokens: int = field(
         default=None, metadata={"help": "maximum number of tokens in a batch"}
     )
     batch_size: Optional[int] = field(
